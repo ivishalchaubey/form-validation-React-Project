@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup-div {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  margin-top: auto;
+}
+.signup-inner-div {
+  width: 80%;
+  height: 70%;
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  padding: 53px;
+  border-radius: 22px;
+  justify-content: space-between;
+  margin-top: 3%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  justify-content: center;
+}
+.signup-form > input {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 22px;
+}
+.signup-form > label {
+  margin-left: 12px;
+  margin-top: 2px;
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.signup-form > button {
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 22px;
+  background-color: rgb(175, 213, 247);
+}
+.signup-form > button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .signup-inner-div {
+    flex-direction: column;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.error {
+  color: red;
+}
+.sucess {
+  color: green;
 }
